@@ -1,0 +1,11 @@
+{% extends base.html %}
+
+{% block body %}
+  <form action="#" method="post">
+    <label for="firstname">Firstname: </label>
+    <input id="firstname" type="text" name="firstname" value="{{ firstname }}">
+    <label for="lastname">Lastname: </label>
+    <input id="lastname" type="text" name="firstname" value="{{ lastname }}">
+    <input type="submit" value="Create">
+  </form>
+{% endbody %}

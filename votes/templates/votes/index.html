@@ -1,0 +1,14 @@
+{% extends base.html %}
+
+{% block body %}
+  <a href='#'>Create a new Candidate</a>
+  <br>
+  <a href='#'>Create a new position</a>
+  <br>
+  <ul>
+  {% for candidate in candidate_list %}
+      <li><a href="//">{{candidate.lastname}}
+        <br>{{candidate.position}}</a></li>
+  {% endfor %}
+  </ul>
+{% endbody %}
